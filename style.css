@@ -9,3 +9,8 @@ aside{
 main{
     flex: 1;
 }
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
