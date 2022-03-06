@@ -4,18 +4,18 @@ body{
 }
 
 aside{
-    background-image: url("background.png");
 	border-right: 1px solid rgb(228, 228, 228);
 	min-height: 100vh;
+	background: rgb(240, 240, 240);
+}
+
+table{
+	width: 285px;
 }
 
 main{
     flex: 1;
 	margin-left: 60px;
-}
-
-table{
-	width: 285px;
 }
 
 img{
@@ -25,7 +25,7 @@ img{
 
 aside > h1{
 	margin-left: 20px;
-	color: rgb(0, 83, 177);
+	color: rgb(0, 177, 80);
 }
 
 td > a{
@@ -36,8 +36,8 @@ td > a{
 }
 
 tr:hover{
-	background: rgba(255, 247, 219, 0.671);
-    outline: 1px solid rgb(255, 239, 145);
+	background: rgb(255, 235, 217);
+    outline: 1px solid rgb(255, 198, 145);
 }
 
 #selected{

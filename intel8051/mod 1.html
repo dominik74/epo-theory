@@ -33,7 +33,7 @@
 <tr><td><a href="mikroradic intel 8051.jpg.html">mikroradic intel 8051.jpg</a></td></tr>
 <tr><td><a href="mikroradic intel 8051.html">mikroradic intel 8051</a></td></tr>
 <tr><td><a href="mod 0.html">mod 0</a></td></tr>
-<tr><td><a href="mod 1.html">mod 1</a></td></tr>
+<tr id="selected"><td><a href="mod 1.html">mod 1</a></td></tr>
 <tr><td><a href="mod 1.png.html">mod 1.png</a></td></tr>
 <tr><td><a href="mod 2.html">mod 2</a></td></tr>
 <tr><td><a href="mod 2.png.html">mod 2.png</a></td></tr>
@@ -80,7 +80,7 @@
 </table>
     </aside>
     <main>
-        
+        <h1>Mód 1</h1><ul><li>určen pro přenos 10bitových slov s délkou dat 8 bitů</li><li>vysílání přez TxD, příjem přes RxD</li><li>první tzv. <strong>start bit</strong>, je vždy nulový</li><li>poslední tzv. <strong>stop bit</strong>, má vždy hodnotu 1 a ukládá se do RB8</li><li>přenosová rychlost volitelná, určena periodou (četností) přetečení <a href="citace%20a%20casovace.html">čítače/časovače</a> 1 a hodnotou nejvyššího bitu SMOD v registru PCON</li></ul><p><img src="vzorec%201.png.html" alt="vzorec 1.png.html"/> <img src="vzorec%203.png.html" alt="vzorec 3.png.html"/> </p><ul><li>umožňuje volbu přenosových rychlostí od 122bps do 31,24kbps</li><li>pro dosažení nízkých přenosových rychlostí se využívá <a href="citace%20a%20casovace.html">časovač</a> v módu 1 s povoleným přerušením a opětovným naplněním po vzniku přerušení</li></ul><ul><li>RxD se pro zjištění start bitu vzorkuje s frekvencí 16krát vyšší než je přenosová rychlost, pak se <a href="citace%20a%20casovace.html">čítač</a> děleno 16 vynuluje</li><li>vzorkování v 7., 8. a 9. intervalu doby bitu, za platnou se považuje hodnota zjištěná alespoň dvakrát (vyloučení vlivu šumu)</li></ul><p><img src="mod%201.png.html" alt="mod 1.png.html"/> </p>
     </main>
 </body>
 </html>

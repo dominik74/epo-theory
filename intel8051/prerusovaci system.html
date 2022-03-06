@@ -44,7 +44,7 @@
 <tr><td><a href="p3 bity.png.html">p3 bity.png</a></td></tr>
 <tr><td><a href="pamet programu.jpg.html">pamet programu.jpg</a></td></tr>
 <tr><td><a href="pamet.html">pamet</a></td></tr>
-<tr><td><a href="prerusovaci system.html">prerusovaci system</a></td></tr>
+<tr id="selected"><td><a href="prerusovaci system.html">prerusovaci system</a></td></tr>
 <tr><td><a href="pristup do vnejsi pameti dat.png.html">pristup do vnejsi pameti dat.png</a></td></tr>
 <tr><td><a href="pristup do vnejsi pameti programu.png.html">pristup do vnejsi pameti programu.png</a></td></tr>
 <tr><td><a href="prom.html">prom</a></td></tr>
@@ -80,7 +80,7 @@
 </table>
     </aside>
     <main>
-        
+        <h1>přerušovací systém</h1><h3>vnější přerušení</h3><ul><li>INT0 a INT1</li><li>vyvoláno logickou úrovní 0 nebo sestupnou hranou (podle nastavení IT0 a IT1 v <a href="tcon.html)">TCON</a></li><li>po vzniku přerušení nastaven bit IE0 nebo IE1 v <a href="tcon.html">TCON</a></li><li>při obsluze přerušení se <strong>příznak přerušení</strong> automaticky vynuluje pouze pokud je vyvoláno hranou</li></ul><h3>od čítače/časovače</h3><ul><li>vyvolává se nastavením <a href="registr%20priznaku.html">příznaků</a> TF0 a TF1</li><li>při vyvolání přerušení se <a href="overflow.html">příznak přetečení</a> automaticky vynuluje</li></ul><h3>od sériového kanálu</h3><ul><li>generuje se logickým součtem <a href="registr%20priznaku.html">příznaků</a> RI a TI</li><li><a href="registr%20priznaku.html">příznaky</a> nejsou přerušením nulovány, aby bylo možné zjistit zdroj</li></ul><p><img src="radic%20preruseni.png.html" alt="radic preruseni.png.html"/> </p>
     </main>
 </body>
 </html>
