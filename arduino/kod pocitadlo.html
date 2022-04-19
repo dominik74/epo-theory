@@ -30,8 +30,8 @@
 <tr><td><a href="kod ctverec z ledek.png.html">kod ctverec z ledek.png</a></td></tr>
 <tr><td><a href="kod kriz z ledek.png.html">kod kriz z ledek.png</a></td></tr>
 <tr><td><a href="kod ovladani vice ledek.png.html">kod ovladani vice ledek.png</a></td></tr>
-<tr><td><a href="kod pocitadlo.html">kod pocitadlo</a></td></tr>
-<tr id="selected"><td><a href="kod zobraz 0-9 dokola.png.html">kod zobraz 0-9 dokola.png</a></td></tr>
+<tr id="selected"><td><a href="kod pocitadlo.html">kod pocitadlo</a></td></tr>
+<tr><td><a href="kod zobraz 0-9 dokola.png.html">kod zobraz 0-9 dokola.png</a></td></tr>
 <tr><td><a href="krokovy motor.png.html">krokovy motor.png</a></td></tr>
 <tr><td><a href="led napeti.html">led napeti</a></td></tr>
 <tr><td><a href="motorky.html">motorky</a></td></tr>
@@ -45,7 +45,7 @@
 </table>
     </aside>
     <main>
-        <img src="kod zobraz 0-9 dokola.png">
+        <h1>kod pocitadlo</h1>byte cifry[10][7] = {<br>  {1, 1, 1, 1, 1, 1, 0}, //0<br>  {0, 1, 1, 0, 0, 0, 0}, //1<br>  {1, 1, 0, 1, 1, 0, 1}, //2<br>  {1, 1, 1, 1, 0, 0, 1}, //3<br>  {0, 1, 1, 0, 0, 1, 1}, //4<br>  {1, 0, 1, 1, 0, 1, 1}, //5<br>  {1, 0, 1, 1, 1, 1, 1}, //6<br>  {1, 1, 1, 0, 0, 0, 0}, //7<br>  {1, 1, 1, 1, 1, 1, 1}, //8<br>  {1, 1, 1, 1, 0, 1, 1}, //9<br>};<br><br>byte cislo[] = {1, 2, 3, 4};<br>long cas;<br><br>void setup()<br>{<br>  // put your setup code here, to run once:<br><br>  for (int i = 2; i <= 12; i++)<br>  {<br>    pinMode(i, OUTPUT);<br>  }<br>  <br>  cas = millis();<br>}<br><br>void loop()<br>{<br>  // put your main code here, to run repeatedly:<br><br>  for (int pozice = 9; pozice <= 12; pozice++)<br>  {<br>    //pošli hodnotu<br>    for (int segment = 2; segment <= 8; segment++)<br>    {<br>      digitalWrite(segment, cifry[cislo[pozice-9]][segment-2]);<br>    }<br>    //zapni pozici<br>    digitalWrite(pozice, 0);<br>    delay(5);<br>    //vypni pozici<br>    digitalWrite(pozice, 1);<br>  }<br>  <br>  if (millis()-cas >= 500)<br>  {<br>    //změna čísla<br>    if (cislo[3] < 9)<br>    {<br>    	cislo[3]++;<br>    }<br>    else<br>    {<br>      	cislo[3] = 0;<br>      <br>       	if (cislo[2] < 9)<br>        {<br>            cislo[2]++;<br>        }<br>        else<br>        {<br>            cislo[2] = 0;<br>          <br>            if (cislo[1] < 9)<br>            {<br>                cislo[1]++;<br>            }<br>            else<br>            {<br>                cislo[1] = 0;<br>              <br>              	if (cislo[0] < 9)<br>                {<br>                    cislo[0]++;<br>                }<br>                else<br>                {<br>                    cislo[0] = 0;<br>                }<br>            }<br>        }<br>    }<br>    //aktualizovat čas poslední změny<br>    cas = millis();<br>  }<br>}<br>
     </main>
 </body>
 </html>
