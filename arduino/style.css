@@ -32,11 +32,21 @@ td > a{
 }
 
 tr:hover{
-	background: rgba(255, 247, 219, 0.671);
-    outline: 1px solid rgb(255, 239, 145);
+	/* background: rgba(255, 247, 219, 0.671); */
+    /* outline: 1px solid rgb(255, 239, 145); */
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 0 2px 2px 0;
 }
 
 #selected{
 	background: white;
-    outline: 1px solid rgb(196, 196, 196);
+    /* outline: 1px solid rgb(196, 196, 196); */
+}
+
+#selected td{
+	box-sizing: border-box;
+	box-shadow: inset 4px 0 0 0 rgb(0, 83, 177), 5px 5px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 0 2px 2px 0;
+	/* border-left: 5px solid rgb(0, 83, 177); */
+	/* margin: -1px; */
 }

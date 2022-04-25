@@ -6,7 +6,7 @@ body{
 aside{
 	border-right: 1px solid rgb(228, 228, 228);
 	min-height: 100vh;
-	background: rgb(240, 240, 240);
+	/*background: rgb(240, 240, 240);*/
 }
 
 table{
@@ -36,8 +36,8 @@ td > a{
 }
 
 tr:hover{
-	background: rgba(201, 201, 201, 0.671);
-    outline: 1px solid rgb(182, 182, 182);
+	background: rgba(0, 0, 0, 0.1);
+    /*outline: 1px solid rgb(182, 182, 182);*/
 }
 
 #selected{
