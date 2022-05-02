@@ -7,10 +7,8 @@ aside{
 	border-right: 1px solid rgb(228, 228, 228);
 	min-height: 100vh;
 	background: rgb(240, 240, 240);
-}
 
-table{
-	width: 285px;
+width: 300px;
 }
 
 main{
@@ -44,3 +42,5 @@ tr:hover{
 	background: white;
     outline: 1px solid rgb(196, 196, 196);
 }
+
+table{ width: 100%; }
