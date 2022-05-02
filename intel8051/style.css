@@ -36,11 +36,13 @@ td > a{
 tr:hover{
 	background: rgb(255, 235, 217);
     outline: 1px solid rgb(255, 198, 145);
+	border-radius: 0 2px 2px 0;
 }
 
 #selected{
 	background: white;
     outline: 1px solid rgb(196, 196, 196);
+	border-radius: 0 2px 2px 0;
 }
 
 table{ width: 100%; }
